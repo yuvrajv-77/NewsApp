@@ -1,338 +1,760 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NewsApp</title>
-    <link rel="stylesheet" href="css/main-style.css">
-    <link rel="stylesheet" href="css/btn.css">
-    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
-</head>
-<body>
-
-<!-- ---------------- Navigation bar--------------- -->
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="css/main-style.css" />
+    <link rel="stylesheet" href="css/btn.css" />
+    
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- ---------------- Navigation bar--------------- -->
 
     <nav>
-        <div class="main-nav wide flex">
-            <a class="comp-logo" href="#">
-                <img src="img/logo.jpg" alt="logo">
-            </a>
-            <div class="nav-links">
-                <ul class="flex">
-                    <li class="hover-link nav-item">Home</li>
-                    <li class="hover-link nav-item">Finance</li>
-                    <li class="hover-link nav-item">Politics</li>
-                    <li class="hover-link nav-item">Education</li>
-                    <li class="hover-link nav-item">Entertaintment</li>
-                    <li class="hover-link nav-item">Technology</li>
-                    <li class="hover-link nav-item">World</li>
-                    <li class="hover-link nav-item">Bussiness</li>
-                    <li class="hover-link nav-item">Sports</li>
-                    <li class="hover-link nav-item">Science</li>
-                    <li class="hover-link nav-item">Trends</li>
-                    <li class="hover-link nav-item">Health</li>
-                </ul>
-            </div>
-           
-            <!-- --------- Search box--------- -->
-            <div class="search-bar flex">
-                <input type="text" class="news-input" placeholder="Search Topics">
-                <button class="search-btn">SEARCH</button>
-                
-                <div class="toggle-switch" >
-                    <input type="checkbox" id="checkbox">
-                    <label for="checkbox" class="tg-switch-outer">
-                        <span class="toggle-ball"></span>
-                    </label>
-                </div>
-            </div>
+      <div class="main-nav wide flex">
+        <a class="comp-logo" href="#">
+          <img src="img/logo.jpg" alt="logo" />
+        </a>
+        <div class="nav-links">
+          <ul class="flex">
+            <li class="hover-link nav-item">Home</li>
+            <li class="hover-link nav-item">Finance</li>
+            <li class="hover-link nav-item">Politics</li>
+            <li class="hover-link nav-item">Education</li>
+            <li class="hover-link nav-item">Entertaintment</li>
+            <li class="hover-link nav-item">Technology</li>
+            <li class="hover-link nav-item">World</li>
+            <li class="hover-link nav-item">Bussiness</li>
+            <li class="hover-link nav-item">Sports</li>
+            <li class="hover-link nav-item">Science</li>
+            <li class="hover-link nav-item">Trends</li>
+            <li class="hover-link nav-item">Health</li>
+          </ul>
         </div>
+
+        <!-- --------- Search box--------- -->
+        <div class="search-bar flex">
+          <input type="text" class="news-input" placeholder="Search Topics" />
+          <button class="search-btn">SEARCH</button>
+
+          <div class="toggle-switch">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox" class="tg-switch-outer">
+              <span class="toggle-ball"></span>
+            </label>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <!-- Main Section -->
 
     <main>
-        <!-- ------------------------------ Upper info----------------------------- -->
-        <div class="info-upper container flex">
-            
-            <div class="brief-info">
-                <h1>Your Briefing</h1>
-                <p class="date">Saturday,8/9/9</p>
-            </div>
-            
-            <div class="climate-info flex card-effect-light">
-                <img src="img/cloudy.png" alt="wheather">
-                <div class="cli-detail">
-                    <p class="date">Maharashtra</p>
-                    <h1>30 C</h1>
-                </div>
-                
-            </div>
+      <!-- ------------------------------ Upper info----------------------------- -->
+      <div class="info-upper container flex">
+        <div class="brief-info">
+          <h1>Your Briefing</h1>
+          <p class="date">Saturday,8/9/9</p>
         </div>
 
-        <!-- ------------------------------ Main News Box------------------------------- -->
-
-        <div class="news-box container flex">
-            
-            <!-- -------------- Card Left side ---------------------------------- -->
-            <div class="col-left-card card-effect-light">
-                <div class="pad-20">
-                    <h3 class="card-heading">Top Headlines</h3>
-
-                    <hr>    
-                    
-                    <!-- ------------------ Four Article Set 1 ---------------------- -->
-                    <div class="four-article-set only-flex">
-                        
-                        <!-- -------------- Left side big Article------------- -->
-                        <article class="news-big-left">
-                            <img src="https://images.indianexpress.com/2023/07/TOEFL-Australia.jpg?w=640" alt="">
-                            <h3 class="news-title-big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat mollitia autem amet  Quaerat mollitia autem amet quibusdam obcaecati voluptate!</h3>
-                            <div class="source">
-                                Source
-                            </div>
-                        </article>
-                        
-                        <!-- ------------ Right Side small Article----------- -->
-                        <div class="news-small-right only-flex">
-                            
-                            <!-- -------------- Small News------------- -->
-                            <article class="news-small-one">
-                                <div class="source">
-                                    Source
-                                </div>
-                                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente neque natus praesentium ex consequatur molestias quas tenetur adipisci, quibusdam perferendis hic, facilis mollitia labore omnis. Sed adipisci molestias, qui ullam rem corrupti, ut sunt quas culpa, sapiente impedit! Rem, debitis? ersity Vice Chancellor Party Vice President</h5>
-                                <p class="date">8 hours ago</p>
-                            </article>
-
-                            <hr>
-                            
-                            <!-- -------------- Small News------------- -->
-                            <article class="news-small-one">
-                                <div class="source">
-                                    Source
-                                </div>
-                                <h5>BJP Appoints Ex Aligarh Muslim University Vice Chancellor Party Vice President</h5>
-                                <p class="date">8 hours ago</p>
-                            </article>
-
-                            <hr>
-
-                            <!-- -------------- Small News------------- -->
-                            <article class="news-small-one">
-                                <div class="source">
-                                    Source
-                                </div>
-                                <h5>BJP Appoints Ex Aligarh Muslim University Vice Chancellor Party Vice President</h5>
-                                <p class="date">8 hours ago</p>
-                            </article>
-                        <!-- ------------ Right Side small Article Complete ----------- -->
-
-                        </div>
-                    </div>
-
-                    <hr>
-
-                    <!-- ------------------ Four Article Set 2 ---------------------- -->
-                    <div class="four-article-set only-flex">
-                        
-                        <!-- -------------- Left side big Article------------- -->
-                        <article class="news-big-left">
-                            <img src="https://images.indianexpress.com/2023/07/TOEFL-Australia.jpg?w=640" alt="">
-                            <h3 class="news-title-big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat mollitia autem amet  Quaerat mollitia autem amet quibusdam obcaecati voluptate!</h3>
-                            <div class="source">
-                                Source
-                            </div>
-                        </article>
-                        
-                        <!-- ------------ Right Side small Article----------- -->
-                        <div class="news-small-right only-flex">
-                            
-                            <!-- -------------- Small News------------- -->
-                            <article class="news-small-one">
-                                <div class="source">
-                                    Source
-                                </div>
-                                <h5>BJP Appoints Ex Aligarh Muslim University Vice Chancellor Party Vice President</h5>
-                                <p class="date">8 hours ago</p>
-                            </article>
-
-                            <hr>
-                            
-                            <!-- -------------- Small News------------- -->
-                            <article class="news-small-one">
-                                <div class="source">
-                                    Source
-                                </div>
-                                <h5>BJP Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dicta exercitationem saepe corrupti, aspernatur tempora unde fuga officiis nihil vitae accusantium sint sapiente quasi eius dolor debitis obcaecati. Cumque blanditiis voluptatibus odio esse incidunt repudiandae earum quae nisi ipsa voluptates quam, illo numquam! Voluptate architecto harum vero sapiente, natus in.y Vice Chancellor Party Vice President</h5>
-                                <p class="date">8 hours ago</p>
-                            </article>
-
-                            <hr>
-
-                            <!-- -------------- Small News------------- -->
-                            <article class="news-small-one">
-                                <div class="source">
-                                    Source
-                                </div>
-                                <h5>BJP Appoints Ex Aligarh Muslim University Vice Chancellor Party Vice President</h5>
-                                <p class="date">8 hours ago</p>
-                            </article>
-                        <!-- ------------ Right Side small Article Complete ----------- -->
-
-                        </div>
-                    </div>
-
-                    <hr>
-                    
-                </div>
-            </div>
-            <!-- -----------Card Left Side Complete------------ -->
-            
-
-            <!-- -------------- Card Right (Container) side With 2 Cards---------------------------------- -->
-            <div class="col-right-card-container flex">
-                
-                <!-- -------------Card Right Side (local News)------------- -->
-                <div class="col-right-card card-effect-light">
-                    
-                    <div class="pad-20">
-                        
-                        <h4 class="card-heading">Local News</h4>
-
-                        <hr>
-                        
-                        <!-- ------------ Div With Only Flex------------- -->
-                        <div class="local-news-flex only-flex">
-                            
-                            <!-- ---------- local News article-------- -->
-                            <article class="local-news" >
-                                <div class="source">
-                                    Source
-                                </div>
-                                <div class="local-news-head flex">
-                                    <h4 class="right-news-title">BJP Appoints Ex Vice Chancellor Party Vice President</h4>
-                                    
-                                    <img src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp" alt="">
-                                </div>
-                                
-                                <p class="date">8 hours ago</p>
-    
-                            </article>
-                            <hr>
-
-                            <!-- ---------- local News article-------- -->
-                            <article class="local-news" >
-                                <div class="source">
-                                    Source
-                                </div>
-                                <div class="local-news-head flex">
-                                    <h4 class="right-news-title">BJP Appoints Ex Vice Chancellor Party Vice President</h4>
-                                    
-                                    <img src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp" alt="">
-                                </div>
-                                <p class="date">8 hours ago</p>
-                            </article>
-
-                            <hr>
-
-                            <!-- ---------- local News article-------- -->
-                            <article class="local-news" >
-                                <div class="source">
-                                    Source
-                                </div>
-                                <div class="local-news-head flex">
-                                    <h4 class="right-news-title">BJP Appoints Ex Vice Chancellor Party Vice President</h4>
-                                    
-                                    <img src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp" alt="">
-                                </div>
-                                <p class="date">8 hours ago</p>
-                            </article>  
-                        </div>
-                        <!-- ------------ Div With Only Flex Complete ------------- -->
-                        
-                    </div>
-                </div>
-                <!-- -------------Card Right Side Complete ------------- -->
-                
-
-                <!-- -------------Card Right Side (Top picks) ------------- -->
-                <div class="col-right-card card-effect-light">
-                    
-                    <div class="pad-20">
-                        
-                        <h4 class="card-heading">Top Picks For You</h4>
-                        <hr>
-                        <!-- ------------ Div With Only Flex------------- -->
-                        <div class="local-news-flex only-flex">
-                            
-                            <!-- ----------- Top Picks Article--------- -->
-                            <article class="local-news" >
-                                <div class="source">
-                                    Source
-                                </div>
-                                <div class="local-news-head flex">
-                                    <h4 class="right-news-title">BJP Appoints Ex Vice Chancellor Party Vice President</h4>
-                                    
-                                    <img src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp" alt="">
-                                </div>
-                                
-                                <p class="date">8 hours ago</p>
-    
-                            </article>
-                            <hr>
-
-                            <!-- ----------- Top Picks Article--------- -->
-                            <article class="local-news" >
-                                <div class="source">
-                                    Source
-                                </div>
-                                <div class="local-news-head flex">
-                                    <h4 class="right-news-title">BJP Appoints Ex Vice Chancellor Party Vice President</h4>
-                                    
-                                    <img src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp" alt="">
-                                </div>
-                                <p class="date">8 hours ago</p>
-                            </article>
-                            <hr>
-
-                            <!-- ----------- Top Picks Article--------- -->
-                            <article class="local-news" >
-                                <div class="source">
-                                    Source
-                                </div>
-                                <div class="local-news-head flex">
-                                    <h4 class="right-news-title">BJP Appoints Ex Vice Chancellor Party Vice President</h4>
-                                    
-                                    <img src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp" alt="">
-                                </div>
-                                <p class="date">8 hours ago</p>
-                            </article>  
-                            <hr>
-
-                            <!-- ----------- Top Picks Article--------- -->
-                            <article class="local-news" >
-                                <div class="source">
-                                    Source
-                                </div>
-                                <div class="local-news-head flex">
-                                    <h4 class="right-news-title">BJP Appoints Ex Vice Chancellor Party Vice President</h4>
-                                    
-                                    <img src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp" alt="">
-                                </div>
-                                <p class="date">8 hours ago</p>
-                            </article>  
-                            
-                        </div>
-                        <!-- ------------ Div With Only Flex Complete ------------- -->
-                        
-                    </div>
-    
-                </div>
-                <!-- -------------Card Right Side (Top picks) Completed ------------- -->
-            </div>
-            
+        <div class="climate-info flex card-effect-light">
+          <img src="img/cloudy.png" alt="wheather" />
+          <div class="cli-detail">
+            <p class="date">Maharashtra</p>
+            <h1>30 C</h1>
+          </div>
         </div>
+      </div>
+
+      <!-- ------------------------------ Main News Box------------------------------- -->
+
+      <div class="news-box container only-flex">
+        <!-- -------------- Card Left side ---------------------------------- -->
+        <div class="col-left-card card-effect-light">
+          <div class="pad-20">
+            <h3 class="card-heading">Top Headlines</h3>
+
+            <hr />
+
+            <!-- ------------------ Four Article Set 1 ---------------------- -->
+            <div class="four-article-set only-flex">
+              <!-- -------------- Left side big Article------------- -->
+              <article class="news-big-left article-hover">
+                <img
+                  src="https://images.indianexpress.com/2023/07/TOEFL-Australia.jpg?w=640"
+                  alt=""/>
+                <div class="source">Source</div>
+                <h3 class="news-title-big u-text">
+                  Videos on social media showed Bajrang Dal supporters reciting
+                  Hanuman Chalisa near the Nirman Vihar Metro Station. Later,
+                  they tried to block Vikas Marg but were removed by police.
+                </h3>
+                <p class="date">8 hours ago</p>
+              </article>
+
+              <!-- ------------ Right Side small Article----------- -->
+              <div class="news-small-right only-flex">
+                <!-- -------------- Small News------------- -->
+                <article class="news-small-one article-hover ">
+                  <div class="source">Source</div>
+                  <h5 class="u-text">
+                    Videos on social media showed Bajrang Dal supporters
+                    reciting Hanuman Chalisa near the Nirman Vihar Metro
+                    Station. Later, they tried to block Vikas Marg but were
+                    removed by police.
+                  </h5>
+                  <p class="date">8 hours ago</p>
+                </article>
+
+                <hr />
+
+                <!-- -------------- Small News------------- -->
+                <article class="news-small-one article-hover">
+                  <div class="source">Source</div>
+                  <h5 class="u-text">
+                    BJP Appoints Ex Aligarh Muslim University Vice Chancellor
+                    Party Vice President
+                  </h5>
+                  <p class="date">8 hours ago</p>
+                </article>
+
+                <hr />
+
+                <!-- -------------- Small News------------- -->
+                <article class="news-small-one article-hover">
+                  <div class="source">Source</div>
+                  <h5 class="u-text">
+                    BJP Appoints Ex Aligarh Muslim University Vice Chancellor
+                    Party Vice President
+                  </h5>
+                  <p class="date">8 hours ago</p>
+                </article>
+                <!-- ------------ Right Side small Article Complete ----------- -->
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- ------------------ Four Article Set 2 ---------------------- -->
+            <div class="four-article-set only-flex">
+              <!-- -------------- Left side big Article------------- -->
+              <article class="news-big-left article-hover">
+                <img
+                  src="https://images.indianexpress.com/2023/07/TOEFL-Australia.jpg?w=640"
+                  alt=""
+                />
+
+                <div class="source">Source</div>
+                <h3 class="news-title-big u-text">
+                  Delhi On Alert As Haryana Violence Spreads To Affluent
+                  Gurugram Areas: 10 Facts
+                </h3>
+                <p class="date">8 hours ago</p>
+              </article>
+
+              <!-- ------------ Right Side small Article----------- -->
+              <div class="news-small-right only-flex">
+                <!-- -------------- Small News------------- -->
+                <article class="news-small-one article-hover">
+                  <div class="source">Source</div>
+                  <h5 class="u-text">
+                    BJP Appoints Ex Aligarh Muslim University Vice Chancellor
+                    Party Vice President
+                  </h5>
+                  <p class="date">8 hours ago</p>
+                </article>
+
+                <hr />
+
+                <!-- -------------- Small News------------- -->
+                <article class="news-small-one article-hover">
+                  <div class="source">Source</div>
+                  <h5 class="u-text">
+                    BJP Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus dicta exercitationem saepe corrupti, aspernatur
+                    tempora unde fuga officiis nihil vitae accusantium sint
+                    sapiente quasi eius dolor debitis obcaecati. Cumque
+                    blanditiis voluptatibus odio esse incidunt repudiandae earum
+                    quae nisi ipsa voluptates quam, illo numquam! Voluptate
+                    architecto harum vero sapiente, natus in.y Vice Chancellor
+                    Party Vice President
+                  </h5>
+                  <p class="date">8 hours ago</p>
+                </article>
+
+                <hr />
+
+                <!-- -------------- Small News------------- -->
+                <article class="news-small-one article-hover">
+                  <div class="source">Source</div>
+                  <h5 class="u-text">
+                    BJP Appoints Ex Aligarh Muslim University Vice Chancellor
+                    Party Vice President
+                  </h5>
+                  <p class="date">8 hours ago</p>
+                </article>
+                <!-- ------------ Right Side small Article Complete ----------- -->
+              </div>
+            </div>
+
+            <hr />
+
+            <article class="one-article article-hover">
+              <div class="source">Source</div>
+              <div class="one-article-head flex">
+                <h3 class="one-article-title u-text">
+                  Violence broke out during a religious procession in Nuh on
+                  Monday -- just 50 km from Delhi -- following what many say is
+                  an objectionable video that went viral. As a mob attacked the
+                  procession with stones, the 2,500-plus participants rushed
+                  into a temple to take shelter.
+                </h3>
+
+                <img
+                  src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                  alt=""
+                />
+              </div>
+
+              <p class="date">8 hours ago</p>
+            </article>
+            <hr />
+            <article class="one-article article-hover">
+              <div class="source">Source</div>
+              <div class="one-article-head flex">
+                <h3 class="one-article-title u-text">
+                  Violence broke out during a religious procession in Nuh on
+                  Monday -- just 50 km from Delhi -- following what many say is
+                  an objectionable video that went viral. As a mob attacked the
+                  procession with stones, the 2,500-plus participants rushed
+                  into a temple to take shelter.
+                </h3>
+
+                <img
+                  src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                  alt=""
+                />
+              </div>
+
+              <p class="date">8 hours ago</p>
+            </article>
+          </div>
+        </div>
+        <!-- -----------Card Left Side Complete------------ -->
+
+        <!-- -------------- Card Right (Container) side With 2 Cards---------------------------------- -->
+        <div class="col-right-card-container only-flex">
+          <!-- -------------Card Right Side (local News)------------- -->
+          <div class="col-right-card card-effect-light">
+            <div class="pad-20">
+              <h4 class="card-heading">Local News</h4>
+
+              <hr />
+
+              <!-- ------------ Div With Only Flex------------- -->
+              <div class="local-news-flex only-flex">
+                <!-- ---------- local News article-------- -->
+                <article class="local-news article-hover">
+                  <div class="source">Source</div>
+                  <div class="local-news-head flex">
+                    <h4 class="right-news-title u-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Earum eligendi et tempora! Magnam cupiditate doloribus
+                      iure nostrum, ipsam eaque itaque eum exercitationem?
+                      Possimus sed dolore recusandae accusamus modi consequuntur
+                      deserunt velit, odio dolorum cumque, natus provident,
+                      atque aperiam laboriosam distinctio.
+                    </h4>
+
+                    <img
+                      src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                      alt=""
+                    />
+                  </div>
+
+                  <p class="date">8 hours ago</p>
+                </article>
+                <hr />
+
+                <!-- ---------- local News article-------- -->
+                <article class="local-news article-hover">
+                  <div class="source">Source</div>
+                  <div class="local-news-head flex">
+                    <h4 class="right-news-title u-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quos obcaecati facere libero nesciunt fugiat explicabo
+                      alias, voluptatibus inventore quibusdam consectetur
+                      voluptate assumenda iure laboriosam nihil labore adipisci
+                      amet officiis, qui doloremque, veniam non. Optio eaque
+                      iure laborum obcaecati perferendis neque?
+                    </h4>
+
+                    <img
+                      src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                      alt=""
+                    />
+                  </div>
+                  <p class="date">8 hours ago</p>
+                </article>
+
+                <hr />
+
+                <!-- ---------- local News article-------- -->
+                <article class="local-news article-hover">
+                  <div class="source">Source</div>
+                  <div class="local-news-head flex">
+                    <h4 class="right-news-title u-text">
+                      B Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tenetur repellat incidunt illum perspiciatis consequatur
+                      facilis, corrupti voluptatibus nemo cum eveniet, quas
+                      suscipit obcaecati laudantium. Repellat ut quam nesciunt
+                      explicabo sit omnis quos in odit corrupti commodi,
+                      quisquam, repellendus, molestiae quo. sident
+                    </h4>
+
+                    <img
+                      src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                      alt=""
+                    />
+                  </div>
+                  <p class="date">8 hours ago</p>
+                </article>
+              </div>
+              <!-- ------------ Div With Only Flex Complete ------------- -->
+            </div>
+          </div>
+          <!-- -------------Card Right Side Complete ------------- -->
+
+          <!-- -------------Card Right Side (Top picks) ------------- -->
+          <div class="col-right-card card-effect-light">
+            <div class="pad-20">
+              <h4 class="card-heading">Top Picks For You</h4>
+              <hr />
+              <!-- ------------ Div With Only Flex------------- -->
+              <div class="local-news-flex only-flex">
+                <!-- ----------- Top Picks Article--------- -->
+                <article class="local-news article-hover">
+                  <div class="source">Source</div>
+                  <div class="local-news-head flex">
+                    <h4 class="right-news-title u-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Nihil est perferendis quas reprehenderit quae accusamus
+                      mollitia explicabo dicta itaque debitis, libero,
+                      laudantium maxime commodi consectetur ipsa enim error
+                      facilis et animi fugit, ipsam labore quisquam recusandae?
+                      Commodi corrupti iste blanditiis?
+                    </h4>
+
+                    <img
+                      src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                      alt=""
+                    />
+                  </div>
+
+                  <p class="date">8 hours ago</p>
+                </article>
+                <hr />
+
+                <!-- ----------- Top Picks Article--------- -->
+                <article class="local-news article-hover">
+                  <div class="source">Source</div>
+                  <div class="local-news-head flex">
+                    <h4 class="right-news-title u-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Non excepturi iure, ullam ea accusamus repudiandae.
+                      Eveniet animi quidem cupiditate, amet illum blanditiis
+                      excepturi ratione voluptatum, expedita accusantium
+                      nesciunt ullam! Sed quis iste quas quo officia natus ab
+                      tempora alias dolores?
+                    </h4>
+
+                    <img
+                      src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                      alt=""
+                    />
+                  </div>
+                  <p class="date">8 hours ago</p>
+                </article>
+                <hr />
+
+                <!-- ----------- Top Picks Article--------- -->
+                <article class="local-news article-hover">
+                  <div class="source">Source</div>
+                  <div class="local-news-head flex">
+                    <h4 class="right-news-title u-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Mollitia dicta possimus illum accusantium quas voluptates,
+                      hic illo. Tempora ipsa quaerat eveniet voluptatum alias
+                      quas, laudantium voluptatem corporis impedit, labore
+                      debitis, rerum quam nemo quibusdam dolor mollitia
+                      expedita. Perspiciatis, consequatur dignissimos.
+                    </h4>
+
+                    <img
+                      src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                      alt=""
+                    />
+                  </div>
+                  <p class="date">8 hours ago</p>
+                </article>
+                <hr />
+
+                <!-- ----------- Top Picks Article--------- -->
+                <article class="local-news article-hover">
+                  <div class="source">Source</div>
+                  <div class="local-news-head flex">
+                    <h4 class="right-news-title u-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Debitis maiores aspernatur eum praesentium alias, porro
+                      officia nostrum reprehenderit numquam a provident veniam
+                      aliquam. Excepturi, sed. Pariatur magnam ipsum rerum
+                      provident minima! In aliquam, ab qui nostrum a omnis nobis
+                      tempore!
+                    </h4>
+
+                    <img
+                      src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                      alt=""
+                    />
+                  </div>
+                  <p class="date">8 hours ago</p>
+                </article>
+              </div>
+              <!-- ------------ Div With Only Flex Complete ------------- -->
+            </div>
+          </div>
+          <!-- -------------Card Right Side (Top picks) Completed ------------- -->
+        </div>
+      </div>
+
+      <!-- ------------------------------ Upper info----------------------------- -->
+      <div class="info-upper container flex">
+        <div class="brief-info">
+          <h1>Your Topics</h1>
+        </div>
+      </div>
+      <!-- ------------------- Topic Cards ----------------- -->
+      <div class="topic-cards container">
+        
+        <div class="india card card-effect-light">
+          <h3 class="card-heading">India</h3>
+          <hr>
+          
+          <article class="card-article article-hover">
+            <div class="source">Source</div>
+            <div class="card-news-head flex">
+              <h4 class="right-news-title u-text">
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+              </h4>
+
+              <img
+                src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                alt=""/>
+            </div>
+            <p class="date">8 hours ago</p>           
+          </article>
+
+          <hr>
+
+          <article class="card-article article-hover">
+            <div class="source">Source</div>
+            <div class="card-news-head flex">
+              <h4 class="right-news-title u-text">
+                Violence broke out during a religious procession in Nuh on
+                  Monday -- just 50 km from Delhi -- following what many say is
+                  an objectionable video that went viral. As a mob attacked the
+                  procession with stones, the 2,500-plus participants rushed
+                  into a temple to take shelter.
+              </h4>
+
+              <img
+                src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                alt=""/>
+            </div>
+            <p class="date">8 hours ago</p>           
+          </article>
+
+          <hr>
+
+          <article class="card-article article-hover">
+            <div class="source">Source</div>
+            <div class="card-news-head flex">
+              <h4 class="right-news-title u-text">
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+              </h4>
+
+              <img
+                src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                alt=""/>
+            </div>
+            <p class="date">8 hours ago</p>           
+          </article>
+
+
+        </div>
+        
+        <div class="bussiness card card-effect-light">
+          <h3 class="card-heading">Business</h3>
+          <hr>
+          
+          <article class="card-article article-hover">
+            <div class="source">Source</div>
+            <div class="card-news-head flex">
+              <h4 class="right-news-title u-text">
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+              </h4>
+
+              <img
+                src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                alt=""/>
+            </div>
+            <p class="date">8 hours ago</p>           
+          </article>
+
+          <hr>
+
+          <article class="card-article article-hover">
+            <div class="source">Source</div>
+            <div class="card-news-head flex">
+              <h4 class="right-news-title u-text">
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+              </h4>
+
+              <img
+                src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                alt=""/>
+            </div>
+            <p class="date">8 hours ago</p>           
+          </article>
+
+          <hr>
+
+          <article class="card-article article-hover">
+            <div class="source">Source</div>
+            <div class="card-news-head flex">
+              <h4 class="right-news-title u-text">
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+              </h4>
+
+              <img
+                src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                alt=""/>
+            </div>
+            <p class="date">8 hours ago</p>           
+          </article>
+        </div>
+        
+        <div class="technology card card-effect-light">
+          <h3 class="card-heading">Technology</h3>
+          <hr>
+          
+          <article class="card-article article-hover">
+            <div class="source">Source</div>
+            <div class="card-news-head flex">
+              <h4 class="right-news-title u-text">
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+              </h4>
+
+              <img
+                src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                alt=""/>
+            </div>
+            <p class="date">8 hours ago</p>           
+          </article>
+
+          <hr>
+
+          <article class="card-article article-hover">
+            <div class="source">Source</div>
+            <div class="card-news-head flex">
+              <h4 class="right-news-title u-text">
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+              </h4>
+
+              <img
+                src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                alt=""/>
+            </div>
+            <p class="date">8 hours ago</p>           
+          </article>
+
+          <hr>
+
+          <article class="card-article article-hover">
+            <div class="source">Source</div>
+            <div class="card-news-head flex">
+              <h4 class="right-news-title u-text">
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+              </h4>
+
+              <img
+                src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                alt=""/>
+            </div>
+            <p class="date">8 hours ago</p>           
+          </article>
+        </div>
+        
+        <div class="world card card-effect-light">
+          <h3 class="card-heading">World</h3>
+          <hr>
+          
+          <article class="card-article article-hover">
+            <div class="source">Source</div>
+            <div class="card-news-head flex">
+              <h4 class="right-news-title u-text">
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+              </h4>
+
+              <img
+                src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                alt=""/>
+            </div>
+            <p class="date">8 hours ago</p>           
+          </article>
+
+          <hr>
+
+          <article class="card-article article-hover">
+            <div class="source">Source</div>
+            <div class="card-news-head flex">
+              <h4 class="right-news-title u-text">
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+              </h4>
+
+              <img
+                src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                alt=""/>
+            </div>
+            <p class="date">8 hours ago</p>           
+          </article>
+
+          <hr>
+
+          <article class="card-article article-hover">
+            <div class="source">Source</div>
+            <div class="card-news-head flex">
+              <h4 class="right-news-title u-text">
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+              </h4>
+
+              <img
+                src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                alt=""/>
+            </div>
+            <p class="date">8 hours ago</p>           
+          </article>
+        </div>
+        
+        <div class="sports card card-effect-light">
+          <h3 class="card-heading">Sports</h3>
+          <hr>
+          
+          <article class="card-article article-hover">
+            <div class="source">Source</div>
+            <div class="card-news-head flex">
+              <h4 class="right-news-title u-text">
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+              </h4>
+
+              <img
+                src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                alt=""/>
+            </div>
+            <p class="date">8 hours ago</p>           
+          </article>
+
+          <hr>
+
+          <article class="card-article article-hover">
+            <div class="source">Source</div>
+            <div class="card-news-head flex">
+              <h4 class="right-news-title u-text">
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+              </h4>
+
+              <img
+                src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                alt=""/>
+            </div>
+            <p class="date">8 hours ago</p>           
+          </article>
+
+          <hr>
+
+          <article class="card-article article-hover">
+            <div class="source">Source</div>
+            <div class="card-news-head flex">
+              <h4 class="right-news-title u-text">
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+              </h4>
+
+              <img
+                src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                alt=""/>
+            </div>
+            <p class="date">8 hours ago</p>           
+          </article>
+        </div>
+        
+        <div class="entertaintment card card-effect-light">
+            <h3 class="card-heading">Entertaintment</h3>
+            <hr>
+          
+          <article class="card-article article-hover">
+            <div class="source">Source</div>
+            <div class="card-news-head flex">
+              <h4 class="right-news-title u-text">
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+              </h4>
+
+              <img
+                src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                alt=""/>
+            </div>
+            <p class="date">8 hours ago</p>           
+          </article>
+
+          <hr>
+
+          <article class="card-article article-hover">
+            <div class="source">Source</div>
+            <div class="card-news-head flex">
+              <h4 class="right-news-title u-text">
+                Technology-Driven CCTV System Helps Capture Traffic Violators in Mira-Bhayandar
+              </h4>
+
+              <img
+                src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                alt=""/>
+            </div>
+            <p class="date">8 hours ago</p>           
+          </article>
+
+          <hr>
+
+          <article class="card-article article-hover">
+            <div class="source">Source</div>
+            <div class="card-news-head flex">
+              <h4 class="right-news-title u-text">
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+              </h4>
+
+              <img
+                src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
+                alt=""/>
+            </div>
+            <p class="date">8 hours ago</p>           
+          </article>
+        </div>
+
+      </div>
     </main>
-</body>
+  </body>
 </html>

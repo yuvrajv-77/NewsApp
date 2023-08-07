@@ -7,7 +7,7 @@
     --primary-color:rgb(236, 0, 0);
     --secondary-color:rgb(124, 0, 0);
 
-    --theme-white-bg:#f1f6ff;
+    --theme-white-bg:#f5f8fd;
     --theme-black-bg:#1a252e;
 
     --theme-white-nav:rgb(255, 255, 255);
@@ -15,40 +15,13 @@
 
     --theme-white-card:#ffffff;
 
-    --p-text:rgb(8, 8, 8);
+    --p-text:rgb(53, 53, 53);
 
-}
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-body{
-    font-family: var(--primary-font);
-    background: var(--theme-white-bg);
 }
 
 /*------------- Utility Class*/
 
-.flex{ 
-    display: flex;
-    align-items: center;
-}
-.only-flex{
-    display: flex;
-}
-.container{ 
-    max-width: 1120px;
-    margin-inline: auto;
-    overflow: hidden;
-    padding: 4px;
-}
-.wide{
-    max-width: 1670px;
-    margin-inline: auto;
-    overflow: hidden;
-}
+
 
 /*--------- navigation Bar */
 
@@ -138,6 +111,8 @@ main{
     /* border: 1px solid; */
     justify-content: space-between;
     padding: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .climate-info{
     /* border: 1px solid; */
@@ -147,13 +122,8 @@ main{
     /* border-radius: 18px; */
     justify-content: center;
     /* box-shadow: 1px 2px 4px 0px #0000002e; */
-    
 }
-.card-effect-light{
-    background-color: var(--theme-white-card);
-    box-shadow: 1px 2px 4px 0px #0000002e;
-    border-radius: 18px;
-}
+
 .climate-info img{
     width: 50px;
 }
@@ -163,11 +133,13 @@ main{
     font-size: 13px;
 }
 
+/* ------news box------- */
+
 .news-box{
     /* border: 1px solid; */
-    height: 1000px;
+    height: 1060px;
     justify-content: space-between;
-    margin-top: 10px;
+    
 }
 .col-left-card{
     /* border: 1px solid; */
@@ -175,22 +147,6 @@ main{
     height: 100%;
 }
 
-.pad-20{
-    /* width: 100%; */
-    padding: 20px;
-}
-.date, .source{
-    font-family: var(--primary-font);
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-    color: var(--p-text);
-}
-hr{
-    border: none;
-    height: 1px;
-    background-color: rgb(216, 216, 216);
-}
 .card-heading{
     font-family: var(--secondary-font);
     color: var(--primary-color);
@@ -206,14 +162,11 @@ hr{
     margin: 15px 0;
 }
 .news-big-left{
-    height: 290px;
+    height: 300px;
     /* border: 1px solid; */
     width: 41%;
     overflow: hidden;
     cursor: pointer;
-}
-.news-big-left:hover h3{
-    text-decoration: underline;
 }
 
 .news-big-left img{
@@ -222,7 +175,7 @@ hr{
     border-radius: 18px;
 }
 .news-title-big{
-    font-weight: 500;
+    font-weight: 400;
     height: 90px;
     /* white-space: nowrap;*/
     overflow: hidden; /* Hide any text that overflows */
@@ -234,7 +187,7 @@ hr{
 .news-small-right{
     /* border: 1px solid; */
     width: 56%;
-    max-height: 280px;
+    max-height: 300px;
     overflow: hidden;
     flex-direction: column;
     justify-content: space-between;
@@ -244,9 +197,11 @@ hr{
     /* border: 1px solid; */
     cursor: pointer;
 }
-.news-small-one:hover h5,.local-news:hover h4{
+/* .news-small-one:hover h5,.local-news:hover h4,.one-article:hover h3{
     text-decoration: underline;
-}
+} */
+
+
 .news-small-one h5{
     font-weight: 400;
     overflow: hidden;
@@ -258,13 +213,43 @@ hr{
     line-height: 22px;
 }
 
+.one-article{
+    max-width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.one-article-head{
+    gap: 20px;
+}
+.one-article-head img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 18px;
+    
+}
+.one-article-title{
+    overflow: hidden; /* Hide any text that overflows */
+    text-overflow: ellipsis; /* Display ellipsis (...) when text overflows */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    /* padding-right: 4px; */
+    
+}
+
 .col-right-card-container{
     flex-direction: column;
     max-width: 33%;
-    gap: 40px;
+    gap: 28px;
+    align-items: flex-start;
+    
 }
 .col-right-card{
-    height: 50%;
+    
     width: 100%;
     overflow: hidden;
      /* border: 1px solid; */
@@ -284,6 +269,9 @@ hr{
     -webkit-box-orient: vertical;
     font-family: var(--secondary-font);
     font-weight: 400;
+    font-size: 14px;
+    /* padding-right: 10px; */
+    padding: 5px 0;
 }
 .local-news-head img{
     object-fit: cover;
@@ -292,7 +280,37 @@ hr{
     /* overflow: hidden; */
     border-radius: 18px;
 }
+.local-news-head{
+    gap: 20px;
+} 
 .local-news-flex{
     flex-direction: column;
     row-gap: 5px;
+}
+
+/* -------- topic card------- */
+
+.topic-cards{
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    gap: 17px;
+}
+
+.card{
+    padding: 15px;
+    /* border: 1px solid; */
+}
+.card-article{
+    margin: 7px 0px;
+    cursor: pointer;
+}
+.card-news-head{
+    gap: 20px;
+}
+.card-news-head img{
+    object-fit: cover;
+    width: 64px;
+    height: 64px;
+    /* overflow: hidden; */
+    border-radius: 18px;
 }

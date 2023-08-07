@@ -1,0 +1,72 @@
+
+:root{
+    --primary-font:'Oswald', sans-serif;
+    --secondary-font:'Poppins', sans-serif;
+
+    --primary-color:rgb(236, 0, 0);
+    --secondary-color:rgb(124, 0, 0);
+
+    --theme-white-bg:#f5f8fd;
+    --theme-black-bg:#1a252e;
+
+    --theme-white-nav:rgb(255, 255, 255);
+    --theme-black-nav:#0E1217;
+
+    --theme-white-card:#ffffff;
+
+    --p-text:rgb(53, 53, 53);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--primary-font);
+    background: var(--theme-white-bg);
+}
+.flex{ 
+    display: flex;
+    align-items: center;
+}
+.only-flex{
+    display: flex;
+}
+.container{ 
+    max-width: 1150px;
+    margin-inline: auto;
+    overflow: hidden;
+    padding: 4px;
+}
+.wide{
+    max-width: 1670px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+hr{
+    border: none;
+    height: 1px;
+    background-color: rgb(216, 216, 216);
+}
+
+.pad-20{
+    /* width: 100%; */
+    padding: 20px;
+}
+.date, .source{
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: var(--p-text);
+}
+.article-hover:hover .u-text{
+    text-decoration: underline;
+}
+.card-effect-light{
+    background-color: var(--theme-white-card);
+    box-shadow: 1px 2px 4px 0px #0000002e;
+    border-radius: 18px;
+}
