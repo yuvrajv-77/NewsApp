@@ -137,7 +137,7 @@ main{
 
 .news-box{
     /* border: 1px solid; */
-    height: 1060px;
+    /* height: 1060px; */
     justify-content: space-between;
     
 }
@@ -160,23 +160,26 @@ main{
     justify-content: space-between;
     font-family: var(--secondary-font);
     margin: 15px 0;
+    
 }
 .news-big-left{
-    height: 300px;
+    /* height: 300px; */
     /* border: 1px solid; */
     width: 41%;
     overflow: hidden;
     cursor: pointer;
 }
 
-.news-big-left img{
+.news-img{
     object-fit: cover;
-    width: 100%;
+    width: 280px;
+    height: 168px;
     border-radius: 18px;
 }
 .news-title-big{
     font-weight: 400;
     height: 90px;
+    line-height: 26px;
     /* white-space: nowrap;*/
     overflow: hidden; /* Hide any text that overflows */
     text-overflow: ellipsis; /* Display ellipsis (...) when text overflows */

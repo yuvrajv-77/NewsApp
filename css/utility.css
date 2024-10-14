@@ -62,6 +62,11 @@ hr{
     letter-spacing: 0.5px;
     color: var(--p-text);
 }
+.source-logo{
+    height: 11px;
+    
+    
+}
 .article-hover:hover .u-text{
     text-decoration: underline;
 }

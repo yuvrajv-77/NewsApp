@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NewsApp</title>
-    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/utility.css" />
     <link rel="stylesheet" href="css/main-style.css" />
     <link rel="stylesheet" href="css/btn.css" />
-    
+
     <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;1,300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- ---------------- Navigation bar--------------- -->
@@ -42,13 +45,6 @@
         <div class="search-bar flex">
           <input type="text" class="news-input" placeholder="Search Topics" />
           <button class="search-btn">SEARCH</button>
-
-          <div class="toggle-switch">
-            <input type="checkbox" id="checkbox" />
-            <label for="checkbox" class="tg-switch-outer">
-              <span class="toggle-ball"></span>
-            </label>
-          </div>
         </div>
       </div>
     </nav>
@@ -83,167 +79,18 @@
             <hr />
 
             <!-- ------------------ Four Article Set 1 ---------------------- -->
-            <div class="four-article-set only-flex">
-              <!-- -------------- Left side big Article------------- -->
-              <article class="news-big-left article-hover">
-                <img
-                  src="https://images.indianexpress.com/2023/07/TOEFL-Australia.jpg?w=640"
-                  alt=""/>
-                <div class="source">Source</div>
-                <h3 class="news-title-big u-text">
-                  Videos on social media showed Bajrang Dal supporters reciting
-                  Hanuman Chalisa near the Nirman Vihar Metro Station. Later,
-                  they tried to block Vikas Marg but were removed by police.
-                </h3>
-                <p class="date">8 hours ago</p>
-              </article>
-
-              <!-- ------------ Right Side small Article----------- -->
-              <div class="news-small-right only-flex">
-                <!-- -------------- Small News------------- -->
-                <article class="news-small-one article-hover ">
-                  <div class="source">Source</div>
-                  <h5 class="u-text">
-                    Videos on social media showed Bajrang Dal supporters
-                    reciting Hanuman Chalisa near the Nirman Vihar Metro
-                    Station. Later, they tried to block Vikas Marg but were
-                    removed by police.
-                  </h5>
-                  <p class="date">8 hours ago</p>
-                </article>
-
-                <hr />
-
-                <!-- -------------- Small News------------- -->
-                <article class="news-small-one article-hover">
-                  <div class="source">Source</div>
-                  <h5 class="u-text">
-                    BJP Appoints Ex Aligarh Muslim University Vice Chancellor
-                    Party Vice President
-                  </h5>
-                  <p class="date">8 hours ago</p>
-                </article>
-
-                <hr />
-
-                <!-- -------------- Small News------------- -->
-                <article class="news-small-one article-hover">
-                  <div class="source">Source</div>
-                  <h5 class="u-text">
-                    BJP Appoints Ex Aligarh Muslim University Vice Chancellor
-                    Party Vice President
-                  </h5>
-                  <p class="date">8 hours ago</p>
-                </article>
-                <!-- ------------ Right Side small Article Complete ----------- -->
-              </div>
-            </div>
+            <div class="four-article-set only-flex" id="top-headlines"></div>
 
             <hr />
 
             <!-- ------------------ Four Article Set 2 ---------------------- -->
-            <div class="four-article-set only-flex">
-              <!-- -------------- Left side big Article------------- -->
-              <article class="news-big-left article-hover">
-                <img
-                  src="https://images.indianexpress.com/2023/07/TOEFL-Australia.jpg?w=640"
-                  alt=""
-                />
+            <div class="four-article-set only-flex" id="top-headlines-2"></div>
 
-                <div class="source">Source</div>
-                <h3 class="news-title-big u-text">
-                  Delhi On Alert As Haryana Violence Spreads To Affluent
-                  Gurugram Areas: 10 Facts
-                </h3>
-                <p class="date">8 hours ago</p>
-              </article>
+            <hr />
 
-              <!-- ------------ Right Side small Article----------- -->
-              <div class="news-small-right only-flex">
-                <!-- -------------- Small News------------- -->
-                <article class="news-small-one article-hover">
-                  <div class="source">Source</div>
-                  <h5 class="u-text">
-                    BJP Appoints Ex Aligarh Muslim University Vice Chancellor
-                    Party Vice President
-                  </h5>
-                  <p class="date">8 hours ago</p>
-                </article>
-
-                <hr />
-
-                <!-- -------------- Small News------------- -->
-                <article class="news-small-one article-hover">
-                  <div class="source">Source</div>
-                  <h5 class="u-text">
-                    BJP Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatibus dicta exercitationem saepe corrupti, aspernatur
-                    tempora unde fuga officiis nihil vitae accusantium sint
-                    sapiente quasi eius dolor debitis obcaecati. Cumque
-                    blanditiis voluptatibus odio esse incidunt repudiandae earum
-                    quae nisi ipsa voluptates quam, illo numquam! Voluptate
-                    architecto harum vero sapiente, natus in.y Vice Chancellor
-                    Party Vice President
-                  </h5>
-                  <p class="date">8 hours ago</p>
-                </article>
-
-                <hr />
-
-                <!-- -------------- Small News------------- -->
-                <article class="news-small-one article-hover">
-                  <div class="source">Source</div>
-                  <h5 class="u-text">
-                    BJP Appoints Ex Aligarh Muslim University Vice Chancellor
-                    Party Vice President
-                  </h5>
-                  <p class="date">8 hours ago</p>
-                </article>
-                <!-- ------------ Right Side small Article Complete ----------- -->
-              </div>
+            <div id="top-articles">
+              
             </div>
-
-            <hr />
-
-            <article class="one-article article-hover">
-              <div class="source">Source</div>
-              <div class="one-article-head flex">
-                <h3 class="one-article-title u-text">
-                  Violence broke out during a religious procession in Nuh on
-                  Monday -- just 50 km from Delhi -- following what many say is
-                  an objectionable video that went viral. As a mob attacked the
-                  procession with stones, the 2,500-plus participants rushed
-                  into a temple to take shelter.
-                </h3>
-
-                <img
-                  src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
-                  alt=""
-                />
-              </div>
-
-              <p class="date">8 hours ago</p>
-            </article>
-            <hr />
-            <article class="one-article article-hover">
-              <div class="source">Source</div>
-              <div class="one-article-head flex">
-                <h3 class="one-article-title u-text">
-                  Violence broke out during a religious procession in Nuh on
-                  Monday -- just 50 km from Delhi -- following what many say is
-                  an objectionable video that went viral. As a mob attacked the
-                  procession with stones, the 2,500-plus participants rushed
-                  into a temple to take shelter.
-                </h3>
-
-                <img
-                  src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
-                  alt=""
-                />
-              </div>
-
-              <p class="date">8 hours ago</p>
-            </article>
           </div>
         </div>
         <!-- -----------Card Left Side Complete------------ -->
@@ -441,320 +288,353 @@
       </div>
       <!-- ------------------- Topic Cards ----------------- -->
       <div class="topic-cards container">
-        
         <div class="india card card-effect-light">
           <h3 class="card-heading">India</h3>
-          <hr>
-          
+          <hr />
+
           <article class="card-article article-hover">
             <div class="source">Source</div>
             <div class="card-news-head flex">
               <h4 class="right-news-title u-text">
-                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India
+                Play Out 1-1 Draw Against Japan
               </h4>
 
               <img
                 src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
-                alt=""/>
+                alt=""
+              />
             </div>
-            <p class="date">8 hours ago</p>           
+            <p class="date">8 hours ago</p>
           </article>
 
-          <hr>
+          <hr />
 
           <article class="card-article article-hover">
             <div class="source">Source</div>
             <div class="card-news-head flex">
               <h4 class="right-news-title u-text">
                 Violence broke out during a religious procession in Nuh on
-                  Monday -- just 50 km from Delhi -- following what many say is
-                  an objectionable video that went viral. As a mob attacked the
-                  procession with stones, the 2,500-plus participants rushed
-                  into a temple to take shelter.
+                Monday -- just 50 km from Delhi -- following what many say is an
+                objectionable video that went viral. As a mob attacked the
+                procession with stones, the 2,500-plus participants rushed into
+                a temple to take shelter.
               </h4>
 
               <img
                 src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
-                alt=""/>
+                alt=""
+              />
             </div>
-            <p class="date">8 hours ago</p>           
+            <p class="date">8 hours ago</p>
           </article>
 
-          <hr>
+          <hr />
 
           <article class="card-article article-hover">
             <div class="source">Source</div>
             <div class="card-news-head flex">
               <h4 class="right-news-title u-text">
-                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India
+                Play Out 1-1 Draw Against Japan
               </h4>
 
               <img
                 src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
-                alt=""/>
+                alt=""
+              />
             </div>
-            <p class="date">8 hours ago</p>           
+            <p class="date">8 hours ago</p>
           </article>
-
-
         </div>
-        
+
         <div class="bussiness card card-effect-light">
           <h3 class="card-heading">Business</h3>
-          <hr>
-          
+          <hr />
+
           <article class="card-article article-hover">
             <div class="source">Source</div>
             <div class="card-news-head flex">
               <h4 class="right-news-title u-text">
-                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India
+                Play Out 1-1 Draw Against Japan
               </h4>
 
               <img
                 src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
-                alt=""/>
+                alt=""
+              />
             </div>
-            <p class="date">8 hours ago</p>           
+            <p class="date">8 hours ago</p>
           </article>
 
-          <hr>
+          <hr />
 
           <article class="card-article article-hover">
             <div class="source">Source</div>
             <div class="card-news-head flex">
               <h4 class="right-news-title u-text">
-                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India
+                Play Out 1-1 Draw Against Japan
               </h4>
 
               <img
                 src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
-                alt=""/>
+                alt=""
+              />
             </div>
-            <p class="date">8 hours ago</p>           
+            <p class="date">8 hours ago</p>
           </article>
 
-          <hr>
+          <hr />
 
           <article class="card-article article-hover">
             <div class="source">Source</div>
             <div class="card-news-head flex">
               <h4 class="right-news-title u-text">
-                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India
+                Play Out 1-1 Draw Against Japan
               </h4>
 
               <img
                 src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
-                alt=""/>
+                alt=""
+              />
             </div>
-            <p class="date">8 hours ago</p>           
+            <p class="date">8 hours ago</p>
           </article>
         </div>
-        
+
         <div class="technology card card-effect-light">
           <h3 class="card-heading">Technology</h3>
-          <hr>
-          
+          <hr />
+
           <article class="card-article article-hover">
             <div class="source">Source</div>
             <div class="card-news-head flex">
               <h4 class="right-news-title u-text">
-                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India
+                Play Out 1-1 Draw Against Japan
               </h4>
 
               <img
                 src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
-                alt=""/>
+                alt=""
+              />
             </div>
-            <p class="date">8 hours ago</p>           
+            <p class="date">8 hours ago</p>
           </article>
 
-          <hr>
+          <hr />
 
           <article class="card-article article-hover">
             <div class="source">Source</div>
             <div class="card-news-head flex">
               <h4 class="right-news-title u-text">
-                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India
+                Play Out 1-1 Draw Against Japan
               </h4>
 
               <img
                 src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
-                alt=""/>
+                alt=""
+              />
             </div>
-            <p class="date">8 hours ago</p>           
+            <p class="date">8 hours ago</p>
           </article>
 
-          <hr>
+          <hr />
 
           <article class="card-article article-hover">
             <div class="source">Source</div>
             <div class="card-news-head flex">
               <h4 class="right-news-title u-text">
-                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India
+                Play Out 1-1 Draw Against Japan
               </h4>
 
               <img
                 src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
-                alt=""/>
+                alt=""
+              />
             </div>
-            <p class="date">8 hours ago</p>           
+            <p class="date">8 hours ago</p>
           </article>
         </div>
-        
+
         <div class="world card card-effect-light">
           <h3 class="card-heading">World</h3>
-          <hr>
-          
+          <hr />
+
           <article class="card-article article-hover">
             <div class="source">Source</div>
             <div class="card-news-head flex">
               <h4 class="right-news-title u-text">
-                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India
+                Play Out 1-1 Draw Against Japan
               </h4>
 
               <img
                 src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
-                alt=""/>
+                alt=""
+              />
             </div>
-            <p class="date">8 hours ago</p>           
+            <p class="date">8 hours ago</p>
           </article>
 
-          <hr>
+          <hr />
 
           <article class="card-article article-hover">
             <div class="source">Source</div>
             <div class="card-news-head flex">
               <h4 class="right-news-title u-text">
-                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India
+                Play Out 1-1 Draw Against Japan
               </h4>
 
               <img
                 src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
-                alt=""/>
+                alt=""
+              />
             </div>
-            <p class="date">8 hours ago</p>           
+            <p class="date">8 hours ago</p>
           </article>
 
-          <hr>
+          <hr />
 
           <article class="card-article article-hover">
             <div class="source">Source</div>
             <div class="card-news-head flex">
               <h4 class="right-news-title u-text">
-                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India
+                Play Out 1-1 Draw Against Japan
               </h4>
 
               <img
                 src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
-                alt=""/>
+                alt=""
+              />
             </div>
-            <p class="date">8 hours ago</p>           
+            <p class="date">8 hours ago</p>
           </article>
         </div>
-        
+
         <div class="sports card card-effect-light">
           <h3 class="card-heading">Sports</h3>
-          <hr>
-          
+          <hr />
+
           <article class="card-article article-hover">
             <div class="source">Source</div>
             <div class="card-news-head flex">
               <h4 class="right-news-title u-text">
-                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India
+                Play Out 1-1 Draw Against Japan
               </h4>
 
               <img
                 src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
-                alt=""/>
+                alt=""
+              />
             </div>
-            <p class="date">8 hours ago</p>           
+            <p class="date">8 hours ago</p>
           </article>
 
-          <hr>
+          <hr />
 
           <article class="card-article article-hover">
             <div class="source">Source</div>
             <div class="card-news-head flex">
               <h4 class="right-news-title u-text">
-                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India
+                Play Out 1-1 Draw Against Japan
               </h4>
 
               <img
                 src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
-                alt=""/>
+                alt=""
+              />
             </div>
-            <p class="date">8 hours ago</p>           
+            <p class="date">8 hours ago</p>
           </article>
 
-          <hr>
+          <hr />
 
           <article class="card-article article-hover">
             <div class="source">Source</div>
             <div class="card-news-head flex">
               <h4 class="right-news-title u-text">
-                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India
+                Play Out 1-1 Draw Against Japan
               </h4>
 
               <img
                 src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
-                alt=""/>
+                alt=""
+              />
             </div>
-            <p class="date">8 hours ago</p>           
+            <p class="date">8 hours ago</p>
           </article>
         </div>
-        
+
         <div class="entertaintment card card-effect-light">
-            <h3 class="card-heading">Entertaintment</h3>
-            <hr>
-          
+          <h3 class="card-heading">Entertaintment</h3>
+          <hr />
+
           <article class="card-article article-hover">
             <div class="source">Source</div>
             <div class="card-news-head flex">
               <h4 class="right-news-title u-text">
-                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India
+                Play Out 1-1 Draw Against Japan
               </h4>
 
               <img
                 src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
-                alt=""/>
+                alt=""
+              />
             </div>
-            <p class="date">8 hours ago</p>           
+            <p class="date">8 hours ago</p>
           </article>
 
-          <hr>
+          <hr />
 
           <article class="card-article article-hover">
             <div class="source">Source</div>
             <div class="card-news-head flex">
               <h4 class="right-news-title u-text">
-                Technology-Driven CCTV System Helps Capture Traffic Violators in Mira-Bhayandar
+                Technology-Driven CCTV System Helps Capture Traffic Violators in
+                Mira-Bhayandar
               </h4>
 
               <img
                 src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
-                alt=""/>
+                alt=""
+              />
             </div>
-            <p class="date">8 hours ago</p>           
+            <p class="date">8 hours ago</p>
           </article>
 
-          <hr>
+          <hr />
 
           <article class="card-article article-hover">
             <div class="source">Source</div>
             <div class="card-news-head flex">
               <h4 class="right-news-title u-text">
-                India vs Japan, Asian Champions Trophy 2023 Highlights: India Play Out 1-1 Draw Against Japan
+                India vs Japan, Asian Champions Trophy 2023 Highlights: India
+                Play Out 1-1 Draw Against Japan
               </h4>
 
               <img
                 src="https://gumlet.assettype.com/freepressjournal/2021-07/2412cccd-de7a-4b24-906f-692434d8fffe/Devendra_fadnavis_PTI_770x433.webp"
-                alt=""/>
+                alt=""
+              />
             </div>
-            <p class="date">8 hours ago</p>           
+            <p class="date">8 hours ago</p>
           </article>
         </div>
-
       </div>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="main.js" type="module"></script>
   </body>
 </html>
