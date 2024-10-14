@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // Code to be executed when the DOM is fully loaded
-    const CACHE_DURATION = 60 * 60 * 1000; // 1 hour in milliseconds
+    const CACHE_DURATION = 2 * 24 * 60 * 60 * 1000; // 1 hour in milliseconds
     // Function to fetch top headlines
     function fetchTopHeadlines() {
         const url = 'https://real-time-news-data.p.rapidapi.com/top-headlines?limit=500&country=IN&lang=en';
